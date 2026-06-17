@@ -22,7 +22,6 @@ jobs:
       checks: read # to read check status (azure/azure-sdk-actions)
     name: Handle ${{ github.event_name }} ${{ github.event.action }} event
     runs-on: ubuntu-latest # This image is intentionally set to "latest", and not to a specific version
-    if: github.event.workflow.name != 'Check Enforcer'
     steps:
       - uses: azure/azure-sdk-actions@main
         with:
