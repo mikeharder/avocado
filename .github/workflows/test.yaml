@@ -28,6 +28,9 @@ jobs:
       - name: Pass
         run: exit 0
 
+      - name: Pass 2
+        run: exit 0
+
       - if: runner.os == 'Windows'
         run: git config --global core.longpaths true
 
