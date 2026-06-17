@@ -25,6 +25,9 @@ jobs:
     runs-on: ${{ fromJSON('{"ubuntu":"ubuntu-24.04", "windows":"windows-2022"}')[matrix.os] }}
 
     steps:
+      - name: Pass
+        run: exit 0
+
       - if: runner.os == 'Windows'
         run: git config --global core.longpaths true
 
