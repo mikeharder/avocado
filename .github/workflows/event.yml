@@ -9,6 +9,7 @@ on:
   issue_comment:
     types: [created]
   workflow_run:
+    workflows: ["*"]
     types: [completed]
 
 permissions: {}
